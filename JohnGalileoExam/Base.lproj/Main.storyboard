@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1je-Hv-2W3">
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2c-Hh-IlX">
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hq-ga-ATi">
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galileo is not conneted" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Atz-fy-o6P">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="Atz-fy-o6P" firstAttribute="centerX" secondItem="1hq-ga-ATi" secondAttribute="centerX" id="HWk-iN-RzC"/>
+                                                    <constraint firstItem="Atz-fy-o6P" firstAttribute="centerY" secondItem="1hq-ga-ATi" secondAttribute="centerY" id="IeG-4K-bH2"/>
+                                                </constraints>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktv-L0-8bu">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azn-Vx-bam">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <state key="normal" title="Pan Clockwise"/>
+                                                        <connections>
+                                                            <action selector="onPanClockwise:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Js-4c-1QV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="azn-Vx-bam" firstAttribute="width" secondItem="ktv-L0-8bu" secondAttribute="width" multiplier="0.5" id="ChY-n4-fQP"/>
+                                                    <constraint firstItem="azn-Vx-bam" firstAttribute="centerX" secondItem="ktv-L0-8bu" secondAttribute="centerX" id="YkD-BJ-3QS"/>
+                                                    <constraint firstItem="azn-Vx-bam" firstAttribute="height" secondItem="ktv-L0-8bu" secondAttribute="height" multiplier="0.3" id="hL9-Iv-Sdt"/>
+                                                    <constraint firstItem="azn-Vx-bam" firstAttribute="top" secondItem="ktv-L0-8bu" secondAttribute="top" id="hZn-tN-wzV"/>
+                                                </constraints>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nvj-n8-TSh">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1D-PO-PfL">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <state key="normal" title="Pan Anticlockwise"/>
+                                                        <connections>
+                                                            <action selector="onPanAnticlockwise:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Lu-Wr-OB3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="v1D-PO-PfL" firstAttribute="centerX" secondItem="Nvj-n8-TSh" secondAttribute="centerX" id="3vf-zi-BE2"/>
+                                                    <constraint firstItem="v1D-PO-PfL" firstAttribute="width" secondItem="Nvj-n8-TSh" secondAttribute="width" multiplier="0.5" id="9cG-uO-35N"/>
+                                                    <constraint firstItem="v1D-PO-PfL" firstAttribute="height" secondItem="Nvj-n8-TSh" secondAttribute="height" multiplier="0.3" id="Bjn-vB-fLm"/>
+                                                    <constraint firstItem="v1D-PO-PfL" firstAttribute="top" secondItem="Nvj-n8-TSh" secondAttribute="top" id="aLG-CA-uoW"/>
+                                                </constraints>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1M-Pp-QRw">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiH-Cw-F0z">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <state key="normal" title="Tilt Clockwise"/>
+                                                        <connections>
+                                                            <action selector="onTiltClockwise:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6V-Z9-IdT"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="UiH-Cw-F0z" firstAttribute="height" secondItem="U1M-Pp-QRw" secondAttribute="height" multiplier="0.3" id="0VH-0Z-lg9"/>
+                                                    <constraint firstItem="UiH-Cw-F0z" firstAttribute="width" secondItem="U1M-Pp-QRw" secondAttribute="width" multiplier="0.5" id="30H-mK-nu3"/>
+                                                    <constraint firstItem="UiH-Cw-F0z" firstAttribute="top" secondItem="U1M-Pp-QRw" secondAttribute="top" id="9Z4-rg-REI"/>
+                                                    <constraint firstItem="UiH-Cw-F0z" firstAttribute="centerX" secondItem="U1M-Pp-QRw" secondAttribute="centerX" id="pJk-5W-noN"/>
+                                                </constraints>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ofd-8g-nmc">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOX-tE-MeW">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <state key="normal" title="Tilt Anticlockwise"/>
+                                                        <connections>
+                                                            <action selector="onTiltAnticlockwise:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BQj-DF-2QF"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="LOX-tE-MeW" firstAttribute="top" secondItem="Ofd-8g-nmc" secondAttribute="top" id="2Or-Yq-QVa"/>
+                                                    <constraint firstItem="LOX-tE-MeW" firstAttribute="width" secondItem="Ofd-8g-nmc" secondAttribute="width" multiplier="0.5" id="Nk1-3w-JYu"/>
+                                                    <constraint firstItem="LOX-tE-MeW" firstAttribute="centerX" secondItem="Ofd-8g-nmc" secondAttribute="centerX" id="azc-fS-UmM"/>
+                                                    <constraint firstItem="LOX-tE-MeW" firstAttribute="height" secondItem="Ofd-8g-nmc" secondAttribute="height" multiplier="0.3" id="og7-K8-W6u"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="U1M-Pp-QRw" firstAttribute="height" secondItem="X2c-Hh-IlX" secondAttribute="height" multiplier="0.15" id="HJw-ec-2MK"/>
+                                            <constraint firstItem="Ofd-8g-nmc" firstAttribute="top" secondItem="U1M-Pp-QRw" secondAttribute="bottom" id="KAD-VC-fSb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nvj-n8-TSh" secondAttribute="trailing" id="Krc-Zz-CJM"/>
+                                            <constraint firstItem="Ofd-8g-nmc" firstAttribute="leading" secondItem="X2c-Hh-IlX" secondAttribute="leading" id="Llb-Na-H4f"/>
+                                            <constraint firstItem="U1M-Pp-QRw" firstAttribute="leading" secondItem="X2c-Hh-IlX" secondAttribute="leading" id="Q4P-s1-Z2x"/>
+                                            <constraint firstItem="1hq-ga-ATi" firstAttribute="leading" secondItem="X2c-Hh-IlX" secondAttribute="leading" id="VWn-0e-Mm3"/>
+                                            <constraint firstItem="1hq-ga-ATi" firstAttribute="height" secondItem="X2c-Hh-IlX" secondAttribute="height" multiplier="0.2" id="X9B-MW-eTk"/>
+                                            <constraint firstItem="1hq-ga-ATi" firstAttribute="top" secondItem="X2c-Hh-IlX" secondAttribute="top" id="YAh-5d-AmK"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ofd-8g-nmc" secondAttribute="trailing" id="Z38-Qa-YSq"/>
+                                            <constraint firstAttribute="trailing" secondItem="1hq-ga-ATi" secondAttribute="trailing" id="bVC-mW-27o"/>
+                                            <constraint firstItem="ktv-L0-8bu" firstAttribute="height" secondItem="X2c-Hh-IlX" secondAttribute="height" multiplier="0.15" id="d3o-hQ-11b"/>
+                                            <constraint firstItem="Nvj-n8-TSh" firstAttribute="leading" secondItem="X2c-Hh-IlX" secondAttribute="leading" id="gfS-Be-O3e"/>
+                                            <constraint firstItem="U1M-Pp-QRw" firstAttribute="top" secondItem="Nvj-n8-TSh" secondAttribute="bottom" id="isj-cd-kBe"/>
+                                            <constraint firstAttribute="trailing" secondItem="ktv-L0-8bu" secondAttribute="trailing" id="paD-ru-M0F"/>
+                                            <constraint firstItem="Nvj-n8-TSh" firstAttribute="height" secondItem="X2c-Hh-IlX" secondAttribute="height" multiplier="0.15" id="qj3-fX-dLb"/>
+                                            <constraint firstItem="ktv-L0-8bu" firstAttribute="leading" secondItem="X2c-Hh-IlX" secondAttribute="leading" id="rmF-F8-LsS"/>
+                                            <constraint firstItem="Ofd-8g-nmc" firstAttribute="height" secondItem="X2c-Hh-IlX" secondAttribute="height" multiplier="0.15" id="sn7-zT-paj"/>
+                                            <constraint firstAttribute="trailing" secondItem="U1M-Pp-QRw" secondAttribute="trailing" id="vn7-eo-CNM"/>
+                                            <constraint firstItem="ktv-L0-8bu" firstAttribute="top" secondItem="1hq-ga-ATi" secondAttribute="bottom" id="wNE-rv-f1J"/>
+                                            <constraint firstItem="Nvj-n8-TSh" firstAttribute="top" secondItem="ktv-L0-8bu" secondAttribute="bottom" id="xfO-UJ-b7m"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="X2c-Hh-IlX" firstAttribute="width" secondItem="1je-Hv-2W3" secondAttribute="width" multiplier="0.9" id="GGh-Gc-A1W"/>
+                                    <constraint firstItem="X2c-Hh-IlX" firstAttribute="centerY" secondItem="1je-Hv-2W3" secondAttribute="centerY" id="UbY-W3-iWm"/>
+                                    <constraint firstItem="X2c-Hh-IlX" firstAttribute="centerX" secondItem="1je-Hv-2W3" secondAttribute="centerX" id="qcM-P2-9V9"/>
+                                    <constraint firstItem="X2c-Hh-IlX" firstAttribute="height" secondItem="1je-Hv-2W3" secondAttribute="height" multiplier="0.9" id="x7l-BL-yiT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1je-Hv-2W3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BOH-4e-kWO"/>
+                            <constraint firstAttribute="trailing" secondItem="1je-Hv-2W3" secondAttribute="trailing" id="oiJ-Gc-m4i"/>
+                            <constraint firstItem="1je-Hv-2W3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qK5-Lv-G7r"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1je-Hv-2W3" secondAttribute="bottom" id="u09-zJ-n8Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="connectStatusLbl" destination="Atz-fy-o6P" id="gmn-CR-jDh"/>
+                        <outlet property="onConnectView" destination="1hq-ga-ATi" id="tg4-aZ-nie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
