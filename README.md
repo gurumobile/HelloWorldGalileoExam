@@ -17,6 +17,7 @@ Navigate to the root of you git repository and execute the following commands. T
 
  git submodule add https://github.com/motrr/Galileo-iOS-SDK.git
  git commit -m "Added Galileo iOS SDK submodule"
+ 
 At some point in the future you may wish to update you project’s copy of the SDK to the latest version. To do this, again navigate to the root directory and execture the following.
 
  cd Galileo-iOS-SDK
@@ -73,10 +74,12 @@ Connecting to Galileo is performed asynchronously. Notification of a succesful c
 To begin with, ensure you include the GalileoControl.h header in any source files which make use of the GalileoControl framework.
 
  #import <GalileoControl/GalileoControl.h>
+ 
 To initiate a connection, access the shared Galileo instance and call the waitForConnection method. Typically you would also set the delegate prior to this call.
 
 [GCGalileo sharedGalileo].delegate = self;
 [[GCGalileo sharedGalileo] waitForConnection];
+
 In order to be notified when a connection is established you must also implement the GCGalileoDelegate protocol. The following code snippet alerts the user when Galileo connects by implementing the galileoDidConnect method.
 
  - (void) galileoDidConnect
